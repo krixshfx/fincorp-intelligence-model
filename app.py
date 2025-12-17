@@ -7,7 +7,10 @@ import sys
 import os
 
 # Add current directory to path so we can import app modules
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+SRC_PATH = os.path.join(PROJECT_ROOT, "src")
+sys.path.insert(0, PROJECT_ROOT)
+sys.path.insert(0, SRC_PATH)
 
 from src.data.loader import DataLoader
 from src.core.performance import PerformanceAnalyzer
