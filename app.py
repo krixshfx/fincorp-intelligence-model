@@ -9,10 +9,10 @@ import os
 # Add current directory to path so we can import app modules
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from app.data.loader import DataLoader
-from app.core.performance import PerformanceAnalyzer
-from app.core.risk import RiskAnalyzer
-from app.core.simulation import MonteCarloSimulator
+from src.data.loader import DataLoader
+from src.core.performance import PerformanceAnalyzer
+from src.core.risk import RiskAnalyzer
+from src.core.simulation import MonteCarloSimulator
 
 st.set_page_config(page_title="Financial Analyst Mode", layout="wide", page_icon="📈")
 
